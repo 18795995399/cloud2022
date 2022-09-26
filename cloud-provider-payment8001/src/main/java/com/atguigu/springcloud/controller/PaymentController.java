@@ -3,11 +3,10 @@ package com.atguigu.springcloud.controller;
 import com.atguigu.springcloud.cloudapicommons.entities.CommonResult;
 import com.atguigu.springcloud.cloudapicommons.entities.Payment;
 import com.atguigu.springcloud.service.PaymentService;
-//import com.netflix.discovery.DiscoveryClient;
+import com.netflix.discovery.DiscoveryClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
-//import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -25,8 +24,8 @@ public class PaymentController {
     private String serverPort;
 
     //    服务发现
-    /*@Resource
-    private DiscoveryClient discoveryClient;*/
+//    @Resource
+//    private DiscoveryClient discoveryClient;
 
     // 日志对象
     Logger logger = LoggerFactory.getLogger(PaymentController.class);
