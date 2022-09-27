@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+
+spring:
+  application:
+    name: consul-consumer-order
+  cloud:
+    consul:
+      host: 114.116.127.152
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+        #开启健康自我保护机制(心跳机制)
+        heartbeat:
+          enabled: true
